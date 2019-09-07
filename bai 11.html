@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let earnMoney = parseInt(prompt("Nhap so tien thu nhap :"));
+    let money;
+    if (earnMoney > 200000000) {
+        money = earnMoney * 15/100;
+    }
+    if (earnMoney <= 200000000 && earnMoney > 100000000) {
+        money = earnMoney * 10/100;
+    }
+    if (earnMoney <= 100000000) {
+        money = earnMoney * 5/100;
+    }
+    alert("Thue thu nhap ca nhan la : " + money + "VND");
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let CDai = parseInt(prompt("Nhap chieu dai HCN :"));
+    let CRong = parseInt(prompt("Nhap chieu rong HCN :"));
+    let DT;
+    if (CDai === 0 || CRong === 0) {
+        alert("CD va CR phai lon hon 0");
+    } else if (CDai < 0 || CRong < 0) {
+        alert("CD va CR phai lon hon 0");
+    } else if (CRong > CDai) {
+        alert("CD phai lon hon CR");
+    } else {
+        DT = CRong * CDai;
+        alert("Dien tich hinh chu nhat = " + DT);
+    }
+</script>
+</body>
+</html>

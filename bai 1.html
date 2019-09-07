@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+oC <input type="text" id="oC">
+<input type="button" id="change" value="Change" onclick="changeCF()";>
+<script>
+    function changeCF() {
+        let C = document.getElementById('oC');
+        let change = document.getElementById('change');
+        change = (parseFloat(C.value)*9 + 160)/5;
+        let changefix = change.toFixed(2);
+        alert('oF = ' + changefix);
+    }
+</script>
+</body>
+</html>
